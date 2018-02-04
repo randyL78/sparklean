@@ -12,7 +12,7 @@ const Navigation = () =>
       <li className="nav__item"><NavLink to='/commercial' >Commercial</NavLink></li>
       <li className="nav__item"><NavLink to='/residential' >Residential</NavLink></li>
       <li className="nav__item"><NavLink to='/specialty' >Specialty</NavLink></li>
-      <li className="nav__item"><NavLink to='/about' >About</NavLink></li>
+      <li className="nav__item"><NavLink to='/estimates' >Estimates</NavLink></li>
     </ul>
   </nav>
 

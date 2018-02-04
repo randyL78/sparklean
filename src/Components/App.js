@@ -2,7 +2,7 @@
 
 // React libraries
 import React from 'react';
-import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 
 // Custom components
 import Navigation from './Navigation';
@@ -18,13 +18,7 @@ const App = () =>
     <div className="container">
       <Navigation />
       <Header /> 
-      <Switch>
-        <Route exact path='/' render={ () => <Container /> } />
-        <Route exact path='/commercial' render={ () => <h1>Commercial Cleaning</h1> } />
-        <Route exact path='/residential' render={ () => <h1>Home Cleaning</h1> } />
-        <Route exact path='/specialty' render={ () => <h1>Specialty Cleaning</h1> } />
-        <Route exact path='/about' render={ () => <h1>About</h1> } />
-      </Switch>
+      <Container />
     </div>
   </BrowserRouter>
 
