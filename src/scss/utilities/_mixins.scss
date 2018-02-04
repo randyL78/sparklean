@@ -39,8 +39,16 @@
 
 }
 
-// ============== flexbox settings ======================
+// ============== Flexbox settings ======================
 
 @mixin flexy($direction) {
   @extend %flex--#{$direction};
+}
+
+// ============== Helpers =============================
+@mixin doublyVert($margin: 0) { 
+  & + & {
+    margin-top: $margin;
+  }
+
 }

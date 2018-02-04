@@ -1,0 +1,21 @@
+.footer {
+  @include flexy(col-to-row);
+  text-align: center;
+  background-color: $color-primary;
+  color: lighten($color: $grey, $amount: 35%);
+  @include mq(small) {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+  }
+  @include e(item) {
+    padding-left: .5em;
+    padding-right: .5em;
+    @include doublyVert();
+    @include mq(small) {
+      @include doublyVert(1em);
+    }
+  }
+
+}

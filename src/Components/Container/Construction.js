@@ -5,7 +5,7 @@ import React from 'react';
 /**
  * Component talking about the Wordpress disaster
  */
-const Home = () =>
+const Construction = () =>
   <div>
     <h2>Due to a Wordpress update that went horribly wrong, this site is currently undergoing major reconstruction</h2>
     <p>Please use the following information below to reach us. We apologize for the inconvenience while we work to restore the website to its former glory!</p>
@@ -18,4 +18,4 @@ const Home = () =>
     </ul>
   </div>
 
-export default Home;
+export default Construction;

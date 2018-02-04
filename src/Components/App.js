@@ -8,6 +8,7 @@ import {BrowserRouter} from 'react-router-dom';
 import Navigation from './Navigation';
 import Header from './Header';
 import Container from './Container';
+import Footer from './Footer';
 
 
 /**
@@ -19,6 +20,7 @@ const App = () =>
       <Navigation />
       <Header /> 
       <Container />
+      <Footer />
     </div>
   </BrowserRouter>
 
