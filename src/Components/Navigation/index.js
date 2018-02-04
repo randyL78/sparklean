@@ -1,19 +1,49 @@
 // React libraries
-import React from 'react';
-import {NavLink} from 'react-router-dom';
+import React, {Component} from 'react';
+
+// Custom Components
+import Links from './Links';
+
 
 /**
  *  Renders navigation links
+ *  Handles local navigation state for mobile dropdown
  */
-const Navigation = () => 
-  <nav className="navbar">
-    <ul className="nav">
-      <li className="nav__item"><NavLink exact to='/' >Home</NavLink></li>
-      <li className="nav__item"><NavLink to='/commercial' >Commercial</NavLink></li>
-      <li className="nav__item"><NavLink to='/residential' >Residential</NavLink></li>
-      <li className="nav__item"><NavLink to='/specialty' >Specialty</NavLink></li>
-      <li className="nav__item"><NavLink to='/estimates' >Estimates</NavLink></li>
-    </ul>
-  </nav>
+class Navigation extends Component {
+  // Build initial state of the component
+  constructor() {
+    // Changes scope of "this" from Component base class to Navigation class
+    super();
+    this.state={
+      isMenuDropped: false
+    }
+  }
+
+  handleButtonClick = () => {
+    if (this.state.isMenuDropped) {
+
+      this.setState({
+        isMenuDropped: false
+      })
+    } else {
+ 
+      this.setState({
+        isMenuDropped: true
+      })
+    }
+  }
+
+
+
+
+  render () {
+    return (
+      <nav className="navbar">
+        <button className={this.state.isMenuDropped ? "nav__menu active" : "nav__menu" } onClick={this.handleButtonClick} >Menu</button>
+        <Links  showMenu={this.state.isMenuDropped}   />
+      </nav>
+   )
+  }
+}
 
 export default Navigation;

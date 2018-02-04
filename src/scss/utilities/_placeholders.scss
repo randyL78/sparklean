@@ -31,3 +31,22 @@
   background-color: $color-secondary;
   color: $white;
 }
+
+// ========== Buttons ==========================
+
+%button-flat {
+  border: none;
+  outline: none;
+}
+
+
+// ==========  Acessibility =====================
+%hide-text {
+  text-indent: -9999px;
+}
+
+// ==========  CSS Transitions ==================
+
+%transition-fast {
+  transition: background-color .30s ease-in-out, color .30s ease-in-out;
+}

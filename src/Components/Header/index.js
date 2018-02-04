@@ -5,7 +5,7 @@ import React from 'react';
  * Header component
  */
 const Header = () => 
-  <header className="header header--jumbo">
+  <header className="header header--hero">
     <h1 className="logo header__logo">Sparklean, Inc</h1>
   </header>
 

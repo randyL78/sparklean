@@ -1,14 +1,15 @@
 .header {
   position: relative;
   background: url("images/sparklean-header.jpg") center no-repeat;
-  @include m(jumbo) {
+  @include m(hero) {
     min-height: 400px;
     height: 50%;
+ 
   }
   @include e(logo) {
     margin-top: 0;
     margin-bottom: 0;
-    text-indent: -9999px;
+    @extend %hide-text;
     background: url("images/sparklean_logo.svg") top no-repeat;
     min-height: 150px;
     @include mq(small) {

@@ -10,6 +10,16 @@
   background-color: #ED2224;
   color: #eeefff; }
 
+.nav__menu {
+  border: none;
+  outline: none; }
+
+.header__logo {
+  text-indent: -9999px; }
+
+.nav__item, .nav__item a, .nav__menu {
+  transition: background-color .30s ease-in-out, color .30s ease-in-out; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -249,10 +259,14 @@ body {
   color: #252c3b; }
 
 .nav {
+  display: none;
   list-style-type: none;
   margin-top: 0.25em;
   margin-bottom: 0.25em;
   padding: 0; }
+  @media (min-width: 480px) {
+    .nav {
+      display: flex; } }
   .navbar {
     padding: 0.25em 0.75em;
     background-color: #3752A4; }
@@ -274,17 +288,36 @@ body {
       @media (min-width: 480px) {
         .nav__item a {
           width: auto; } }
+  .nav__menu {
+    font-weight: bold;
+    color: #eeefff;
+    width: 100%;
+    background-color: #3752A4;
+    height: 1.5em;
+    background: url("images/mobile-menu.svg") right no-repeat;
+    cursor: pointer; }
+    @media (min-width: 480px) {
+      .nav__menu {
+        display: none; } }
+    .nav__menu.active {
+      background-color: #24356b; }
+  .nav.show {
+    display: flex; }
+  .nav.hide {
+    display: none; }
+    @media (min-width: 480px) {
+      .nav.hide {
+        display: flex; } }
 
 .header {
   position: relative;
   background: url("images/sparklean-header.jpg") center no-repeat; }
-  .header--jumbo {
+  .header--hero {
     min-height: 400px;
     height: 50%; }
   .header__logo {
     margin-top: 0;
     margin-bottom: 0;
-    text-indent: -9999px;
     background: url("images/sparklean_logo.svg") top no-repeat;
     min-height: 150px; }
     @media (min-width: 480px) {
