@@ -1,0 +1,27 @@
+// Colors
+$color-primary      : #3752A4;
+$color-secondary    : #ED2224;
+$color-complimentary: #1D889a;
+
+$white        : #eeefff;
+$grey         : #576789;
+$black        : #000023;
+
+
+$color-palettes: (
+	grey: (
+		xx-light : lighten($grey, 43%),
+		x-light  : lighten($grey, 35%),
+		light    : lighten($grey, 12%),
+		base     : $grey,
+		dark     : darken($grey, 8%),
+		x-dark   : darken($grey, 16%)
+    )
+);
+
+
+// Breakpoints
+$brkpoint-sm  : 480px;
+$brkpoint-md  : 768px;
+$brkpoint-lg  : 1024px;
+$brkpoint-x-lg: 1400px;

@@ -1,0 +1,33 @@
+// ========= flexbox placeholders ==============
+
+%flex--row {
+  display: flex;
+  flex-direction: row;
+}
+
+%flex--col {
+  display: flex;
+  flex-direction: column;
+}
+
+%flex--col-to-row {
+  display: flex;
+  flex-direction: column;
+  @include mq(small) {
+    flex-direction: row;
+  }
+}
+
+%flex--row-to-col {
+  display: flex;
+  flex-direction: row;
+  @include mq(small) {
+    flex-direction: column;
+  }
+}
+
+// link place holders
+%active {
+  background-color: $color-secondary;
+  color: $white;
+}
