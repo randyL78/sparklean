@@ -52,3 +52,18 @@
   }
 
 }
+
+
+// ================ Grids ==================================
+@mixin grid-columns {
+  @for $i from 1 to $g-count + 1 {
+    $context: g-context(100, $g-count, 10) !global;
+    $target: (100 * $i) + (10 * ($i - 1));
+
+    // Generate column output with the number of columns at endd of selector
+    &--#{$i} {
+      width: percentage($target / $context);
+    }
+  
+  }
+}

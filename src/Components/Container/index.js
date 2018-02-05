@@ -5,6 +5,7 @@ import {Switch, Route} from 'react-router-dom';
 // Custom components
 import Construction from './Construction';
 import NotFound from './NotFound';
+import Home from './Home';
 
 
 /**
@@ -16,7 +17,7 @@ class Container extends Component {
     return (
       <main className = "main">
         <Switch>
-          <Route exact path='/' component={Construction} />
+          <Route exact path='/' component={Home} />
           <Route exact path='/commercial'  component={Construction} />
           <Route exact path='/residential'  component={Construction} />
           <Route exact path='/specialty'  component={Construction} />

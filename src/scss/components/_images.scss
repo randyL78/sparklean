@@ -1,0 +1,17 @@
+.image {
+  margin: 1em 0;
+
+  @include m(responsive) {
+    border-radius: 15px;
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include m(caption) {
+    text-align: center;
+    font-style: italic;
+    font-size: .75em;
+    color: $color-primary;
+  }
+}

@@ -1,0 +1,22 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  @include mq(medium) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  // Grid columns
+  @include e(col) {
+    @include mq(medium) {
+      @include grid-columns;
+    }
+  }
+}
+
+// add gutter
+[class^=grid__col] {
+  & + & {
+    margin-left: .5em;
+  }
+}
+

@@ -3,5 +3,13 @@
   width: 92%;
   margin: 15px auto; 
   padding: .75em;
+  border-radius: 15px;
+  @include mq(small) {
+    margin-bottom: 5em;
+  }
+  @include mq(medium) {
+    margin-bottom: 4em;
+    max-width: 1000px;
+  }
 
 }

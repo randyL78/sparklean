@@ -1,0 +1,14 @@
+.section {
+  & h3 {
+    text-align: center;
+  }
+  &+& {
+    border-top: 1px solid lighten($grey, 25%);
+  }
+}
+
+.toEnd {
+  @include mq(medium) {
+    order: 12;
+  }
+}

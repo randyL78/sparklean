@@ -26,13 +26,13 @@
   }
 }
 
-// link place holders
+// ============ Links =============================
 %active {
   background-color: $color-secondary;
   color: $white;
 }
 
-// ========== Buttons ==========================
+// ============= Buttons ==========================
 
 %button-flat {
   border: none;
@@ -48,5 +48,5 @@
 // ==========  CSS Transitions ==================
 
 %transition-fast {
-  transition: background-color .30s ease-in-out, color .30s ease-in-out;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
