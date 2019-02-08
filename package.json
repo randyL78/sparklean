@@ -10,10 +10,10 @@
     "react-scripts": "1.1.0"
   },
   "scripts": {
-    "sassWatch" : "sass --watch src/scss/:src/",
+    "sassWatch": "sass --watch src/scss/:src/",
     "start": "react-scripts start | npm run sassWatch",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"  
+    "eject": "react-scripts eject"
   }
 }
